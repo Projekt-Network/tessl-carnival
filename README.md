@@ -76,8 +76,8 @@ DeepMind, Meta, Netlify, Thoughtworks and Docker.
 
 ## The carnival
 
-The carnival is a small browser game. It ships with one game, the **water
-cannon**, and a midway you walk around: a sunny fairground with tents, rides and
+The carnival is a small browser game. It ships with two games, the **water
+cannon** and the **High Striker**, and a midway you walk around: a sunny fairground with tents, rides and
 a booth for every game. Empty booths say "coming soon" until a game fills them.
 
 You grow your carnival by adding games through your factory. Each game lives in
@@ -223,6 +223,8 @@ TypeScript, Vite and plain HTML canvas, with Vitest for the game logic. No UI
 framework and no native dependencies, so `npm ci` is the whole setup.
 
 - `index.html` and `src/main.ts`: the page and the router.
+- `src/share.ts`: the share links shown on the midway, for posting your
+  carnival on X and LinkedIn.
 - `src/midway/`: the walkable midway. Every registered game gets a booth along
   the avenue.
 - `src/carnival/`: the shared base every game uses: the game registry, scores,
