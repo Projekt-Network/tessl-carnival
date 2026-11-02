@@ -58,12 +58,16 @@ docs/jit-board-queue.md   the design for the workshop's advanced stretch
 tessl-factory/skills/     sample skills for maintenance loops
 src/
   main.ts                 the router (#/play/<game-id>) and the midway's overlay
+  style.css               the page's styles
+  share.ts                the carnival's share link and prefilled posts
+  share.test.ts
   midway/                 the walkable midway map
     world.ts              layout, movement and pathfinding (plain functions)
     world.test.ts
     render.ts             drawing the scenery, booths and people
     palette.ts            the map's scenery colours, built on the theme
     midway.ts             input, camera and the animation loop
+    aidevcon-banner.png   the banner image drawn on the map
   carnival/               shared base every game uses
     registry.ts           the CarnivalGame shape and the registry
     scores.ts             recordScore, bestScore, topScores
@@ -72,6 +76,10 @@ src/
   games/
     index.ts              finds every game folder and registers it
     water-cannon/         the finished game, and the pattern to copy
+      game.ts
+      game.test.ts
+      README.md
+    high-striker/         the High Striker booth
       game.ts
       game.test.ts
       README.md
