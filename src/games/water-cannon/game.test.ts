@@ -75,6 +75,8 @@ describe('water cannon', () => {
   it('scores a fast target higher than a slow one', () => {
     const slow = scoreForHit({ ...target, speed: 60 });
     const fast = scoreForHit({ ...target, speed: -180 });
-    expect(Math.max(fast, slow)).toBeGreaterThanOrEqual(slow);
+    expect(slow).toBe(10);
+    expect(fast).toBe(30);
+    expect(fast).toBeGreaterThan(slow);
   });
 });
